@@ -14,8 +14,8 @@ def draw_red_grid(img):
     line_thickness = 1
 
     # Define the spacing between grid lines (in pixels) corresponding to 1 cm
-    grid_spacing = 15  # Adjust this value based on the actual size of 1 cm in your image
-
+    grid_spacing = 15  
+    
     # Draw vertical grid lines
     for x in range(0, img.shape[1], grid_spacing):
         cv.line(img, (x, 0), (x, img.shape[0]), line_color, line_thickness)
